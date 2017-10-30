@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<VBox prefHeight="400.0" prefWidth="600.0" fx:controller="slotMachineProject.SlotMachineController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="30.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="New" />
+          <Menu mnemonicParsing="false" text="Load">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Player A" />
+              <MenuItem mnemonicParsing="false" text="Player B" />
+                  <MenuItem mnemonicParsing="false" text="Player C" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Save">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Player A" />
+                  <MenuItem mnemonicParsing="false" text="Player B" />
+                  <MenuItem mnemonicParsing="false" text="Player C" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="History" />
+            <Menu mnemonicParsing="false" text="Quit" />
+        </menus>
+      </MenuBar>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" prefHeight="150.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="150.0" prefWidth="150.0" />
+            <Pane prefHeight="150.0" prefWidth="150.0" />
+            <Pane prefHeight="150.0" prefWidth="150.0" />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" prefWidth="100.0" text="Spin" textAlignment="CENTER" />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="5.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Label text="Your Wallet Contains $" />
+            <Label text="0" />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="20.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" text="Have a cheat Code? Enter here:" textAlignment="CENTER" />
+            <TextField />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="5.0" prefHeight="80.0" prefWidth="600.0">
+         <children>
+            <Label text="You Got" />
+            <Label text="x You win Y, Congratulations" />
+         </children>
+      </FlowPane>
+   </children>
 </VBox>
-
